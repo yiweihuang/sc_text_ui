@@ -1,0 +1,1 @@
+{"service": {"vid_list": [["網路安全課程大綱", "QFpIqmdL_bU", 95, 1]], "total_count": 1, "order": 0.25}, "domain": {"vid_list": [["網路安全課程大綱", "QFpIqmdL_bU", 95, 1]], "total_count": 1, "order": 0.5}, "DNS": {"vid_list": [["網路安全課程大綱", "QFpIqmdL_bU", 95, 1]], "total_count": 1, "order": 0.75}, "流量": {"vid_list": [["網路安全課程大綱", "QFpIqmdL_bU", 110, 1]], "total_count": 1, "order": 1.0}}
