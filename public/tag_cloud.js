@@ -38,7 +38,7 @@ var addTagCloud = function(keyword) {
   d3.layout.cloud().size([500, 300])
       .words(keyword)
       .rotate(function() { return ~~(Math.random() * 2) * 360; })
-      .font("Impact")cd sc_text_
+      .font("Impact")
       .fontSize(function(d) { return d.size; })
       .on("end", draw)
       .start();
