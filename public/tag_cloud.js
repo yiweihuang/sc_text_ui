@@ -37,7 +37,7 @@ var parseData = function(){
 var addTagCloud = function(keyword) {
   d3.layout.cloud().size([500, 300])
       .words(keyword)
-      .rotate(function() { return ~~(Math.random() * 2) * 360; })
+      .rotate(function() { return ~~(Math.random() * 2) * 0; })
       .font("Impact")
       .fontSize(function(d) { return d.size; })
       .on("end", draw)
