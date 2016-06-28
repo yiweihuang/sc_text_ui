@@ -22,7 +22,7 @@ var parseData = function(){
               var order = [];
 
               for(var obj in data){
-                keyword.push({'text': obj, 'size': data[obj]["order"]*80});
+                keyword.push({'text': obj, 'size': data[obj]["order"]*50});
               }
               addTagCloud(keyword);
           }
