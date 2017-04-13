@@ -22,7 +22,7 @@ var parseData = function(){
               var order = [];
 
               for(var obj in data){
-                keyword.push({'text': obj, 'size': data[obj]["order"]*50});
+                keyword.push({'text': obj, 'size': data[obj]["order"]*60});
               }
               addTagCloud(keyword);
           }
@@ -35,9 +35,9 @@ var parseData = function(){
 
 
 var addTagCloud = function(keyword) {
-  d3.layout.cloud().size([500, 300])
+  d3.layout.cloud().size([400, 300])
       .words(keyword)
-      .rotate(function() { return ~~(Math.random() * 2) * 0; })
+      .rotate(function() { return ~~(Math.random() * 2) * 90; })
       .font("Impact")
       .fontSize(function(d) { return d.size; })
       .on("end", draw)
@@ -46,10 +46,10 @@ var addTagCloud = function(keyword) {
 
 function draw(words) {
   d3.select("#tag_vis").append("svg")
-      .attr("width", 500)
+      .attr("width", 400)
       .attr("height", 300)
     .append("g")
-      .attr("transform", "translate(250,150)")
+      .attr("transform", "translate(200,150)")
     .selectAll("text")
       .data(words)
     .enter().append("text")
